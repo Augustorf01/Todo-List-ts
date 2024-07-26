@@ -10,7 +10,7 @@ test('load home page success', async ({ page }) => {
 test('create new task success', async ({ page }) => {
   await page.goto('/', { waitUntil: 'networkidle'});
 
-  await page.getByPlaceholder('  Adicione uma nova tarefa').fill('Task 4')
+  await page.getByPlaceholder('Adicione uma nova tarefa').fill('Task 4')
   await page.getByRole('button', { name: 'Criar' }).click()
 
   await expect(page.getByText('Task 4')).toBeVisible()
@@ -75,7 +75,7 @@ test('Test all of application', async ({ page }) => {
   // 4. Espera adicionar uma nova tarefa
   // 5. Espera quera o contador de tarefas criadas seja atualizado corretamente.
   // 6. Espera que o contador de concluídas permaneça inalterado.
-  await page.getByPlaceholder('  Adicione uma nova tarefa').fill('Task 4')
+  await page.getByPlaceholder('Adicione uma nova tarefa').fill('Task 4')
   await page.getByRole('button', { name: 'Criar' }).click()
   await expect(page.getByText('Task 4')).toBeVisible()
   await expect(page.getByText('Tarefas Criadas4')).toBeVisible()
