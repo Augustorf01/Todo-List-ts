@@ -1,30 +1,64 @@
-# React + TypeScript + Vite
+# Todo List App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Uma aplicação simples de lista de tarefas construída com React e TypeScript.
 
-Currently, two official plugins are available:
+## Descrição
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+A Todo List App permite aos usuários adicionar, visualizar, gerenciar e remover tarefas. A aplicação possui um contador de tarefas concluídas e uma interface limpa e intuitiva.
 
-## Expanding the ESLint configuration
+## Funcionalidades
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- Adicionar novas tarefas
+- Visualizar lista de tarefas
+- Marcar tarefas como concluídas/não concluídas
+- Remover tarefas
+- Contador de Tarefas Criadas
+- Contador de tarefas concluídas
 
-- Configure the top-level `parserOptions` property like this:
+## Tecnologias Utilizadas
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json', './tsconfig.app.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+- **React**: Biblioteca JavaScript para construção de interfaces de usuário
+- **TypeScript**: Superset de JavaScript que adiciona tipagem estática
+- **Vitest**: Framework de testes unitários
+- **Testing Library**: Conjunto de utilitários para testar componentes React
+- **Happy DOM**: Simulador de DOM para testes
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Instalação
+
+Para instalar e executar a aplicação localmente, siga os passos abaixo:
+
+1. Clone o repositório:
+
+    ```bash
+    git clone https://github.com/Augustorf01/Todo-List-ts.git
+    cd Todo-List-ts
+    ```
+
+2. Instale as dependências:
+
+    ```bash
+    npm install
+    ```
+
+3. Execute a aplicação:
+
+    ```shell
+    npm run dev
+    ```
+
+4. Abra o navegador e acesse `http://localhost:5173`.
+
+## Uso
+
+### Adicionar Tarefa
+
+1. Digite o título da tarefa no campo de input.
+2. Clique no botão "Criar" para adicionar a tarefa.
+
+### Marcar Tarefa como Concluída
+
+1. Clique no checkbox ao lado da tarefa para marcar como concluída ou não concluída.
+
+### Remover Tarefa
+
+1. Clique no ícone de lixeira ao lado da tarefa que deseja remover.
