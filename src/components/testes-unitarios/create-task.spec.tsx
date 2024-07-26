@@ -61,10 +61,4 @@ describe('should display input & button and execute your features correctly', ()
 
         // wrapper.debug()
     })
-
-    it('should check input type="checkbox" when is clicked for mark, unmark when clicked again and set the status correctly', async () => {
-        // const wrapper = render(<CreateTask handleList={() => {}} />)
-
-        // const checkboxList = 
-    })
 })
