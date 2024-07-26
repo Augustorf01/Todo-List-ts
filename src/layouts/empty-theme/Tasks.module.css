@@ -1,0 +1,25 @@
+.bottomlist {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5rem;
+
+    p {
+        margin-top: 1rem;
+        color: var(--gray-100);
+        opacity: 0.25;
+    }
+}
+
+.emptylist {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+hr {
+    display: flex;
+    margin: 2rem 29rem;
+    width: 50%;
+    border: 1px solid var(--gray-400);
+}
